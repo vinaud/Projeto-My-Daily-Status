@@ -11,9 +11,12 @@ const NavLink = ({href, children}) =>{
 const NavBar = () =>{
     return (
         <div className='bg-gray-500 py-4 text-center'>
+
+            <NavLink href = '/app' > Home </NavLink>
+
             <NavLink href = '/sobre' > Sobre </NavLink>
                
-            <NavLink href = '/cadastro'>Cadastre-se</NavLink>
+            <NavLink href = '/create-status'>Cadastrar Status</NavLink>
 
             <NavLink href = '/api/logout'><a>Logout</a></NavLink>
        </div>
