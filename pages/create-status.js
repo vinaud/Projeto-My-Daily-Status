@@ -49,8 +49,8 @@ const CreateStatus = () =>
             <label className = 'block' ><input type ='radio' name = 'status' value = 'gripe' onClick = { onStatusChange}/>Estou com sintomas de gripe.</label>
             <label className = 'block'><input type ='radio' name = 'status' value = 'covid' onClick = { onStatusChange} />Estou com sintomas de COVID-19.</label>
             Sua posição atual: {JSON.stringify(dados)}
-            <button onClick = { getMyLocation }>Pegar minha localização</button>
-            <button onClick = { save }>Salvar meu status </button>
+            <button className= 'py-4 px-2 rounded bg-pink-800 font-bold shadow-xl hover:shadow block w-1/4 text-center mx-auto text-white'  onClick = { getMyLocation }>Pegar minha localização</button>
+            <button className= 'py-4 px-2 rounded bg-pink-800 font-bold shadow-xl hover:shadow block w-1/4 text-center mx-auto text-white' onClick = { save }>Salvar meu status </button>
         </div>
         
     )
