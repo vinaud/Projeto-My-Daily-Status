@@ -24,8 +24,17 @@ const App = (props) => {
 
     return (
         <div>
-            <h1>Status próximos a você: </h1>
-            <table>
+            <h1 className = 'font-boldtext-lg'>Status próximos a você: </h1>
+            <table className ='table-auto items-center'>
+            <thead>
+              <tr>
+                <th class="px-4 py-2">Usuário</th>
+                <th class="px-4 py-2">Status</th>
+                <th class="px-4 py-2">Posição</th>
+                <th class="px-4 py-2">Distância</th>
+              </tr>
+            </thead>
+            <tbody>
             {props.checkins.map(checkin => {
                 let id = 'Seus status'
                 if (checkin.id === props.user.sub){
@@ -33,13 +42,14 @@ const App = (props) => {
                 }
                 return (
                     <tr>
-                        <td>{id}</td>
-                        <td>{checkin.status}</td>
-                        <td>{JSON.stringify(checkin.coords)}</td>
-                        <td>{checkin.distance}</td>
-                        </tr>
+                        <td className='border px-4 py-2'>{id}</td>
+                        <td className='border px-4 py-2'>{checkin.status}</td>
+                        <td className='border px-4 py-2'>{JSON.stringify(checkin.coords)}</td>
+                        <td className='border px-4 py-2'>{checkin.distance} KM</td>
+                    </tr>
                 )
             })}
+            </tbody>
             </table>
             
         </div>
