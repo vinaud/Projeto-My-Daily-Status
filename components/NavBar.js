@@ -15,7 +15,7 @@ const NavBar = () =>{
                
             <NavLink href = '/cadastro'>Cadastre-se</NavLink>
 
-            <NavLink href = '/entrar'><a>Entrar</a></NavLink>
+            <NavLink href = '/api/logout'><a>Logout</a></NavLink>
        </div>
     )
 }
