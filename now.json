@@ -1,0 +1,14 @@
+{
+    "build": {
+        "env": {
+            "AUTH0_CLIENT_ID": "@auth0-client-id",
+            "AUTH0_CLIENT_SECRET": "@auth0-client-secret",
+            "AUTH0_SCOPE": "openid profile",
+            "AUTH0_DOMAIN": "devplenovinaud.auth0.com",
+            "AUTH0_REDIRECT_URI": "@auth0-redirect-uri",
+            "AUTH0_LOGOUT_REDIRECT_URI": "@auth0-logout-redirect",
+            "AUTH0_SESSION_SECRET": "abcabcabcabcbacbacbacbabcbaccaab",
+            "AUTH0_SESSION_COOKIE_TIME": "3600"
+        }
+    }
+}

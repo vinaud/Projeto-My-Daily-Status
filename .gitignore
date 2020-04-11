@@ -106,3 +106,4 @@ dist
 
 #firebase secrets
 firebase-secret.json
+.now
