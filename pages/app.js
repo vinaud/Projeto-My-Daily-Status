@@ -27,9 +27,13 @@ const App = (props) => {
             <h1>Status próximos a você: </h1>
             <table>
             {props.checkins.map(checkin => {
+                let id = 'Seus status'
+                if (checkin.id === props.user.sub){
+                   id = checkin.id
+                }
                 return (
                     <tr>
-                        <td>{checkin.id === props.user.sub && 'Seus status'}</td>
+                        <td>{id}</td>
                         <td>{checkin.status}</td>
                         <td>{JSON.stringify(checkin.coords)}</td>
                         <td>{checkin.distance}</td>
