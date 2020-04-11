@@ -23,9 +23,9 @@ const App = (props) => {
         }
 
     return (
-        <div>
-            <h1 className = 'font-boldtext-lg'>Status próximos a você: </h1>
-            <table className ='table-auto items-center'>
+        <div className = 'content-center right-auto left-auto'>
+            <h1 className = 'text-3xl text-center m-8'>Status próximos a você em um raio de 50 KM: </h1>
+            <table className ='table-auto m-auto items-center'>
             <thead>
               <tr>
                 <th class="px-4 py-2">Usuário</th>
@@ -36,15 +36,22 @@ const App = (props) => {
             </thead>
             <tbody>
             {props.checkins.map(checkin => {
-                let id = 'Seus status'
+                let id = 'Outro usuário'
                 if (checkin.id === props.user.sub){
-                   id = checkin.id
+                   id = 'Seu status'
                 }
+
+                let dist = 'Longe'
+                if (checkin.distance < 10)
+                {
+                    dist = 'Perto'
+                }
+
                 return (
                     <tr>
                         <td className='border px-4 py-2'>{id}</td>
                         <td className='border px-4 py-2'>{checkin.status}</td>
-                        <td className='border px-4 py-2'>{JSON.stringify(checkin.coords)}</td>
+                        <td className='border px-4 py-2'>{dist}</td>
                         <td className='border px-4 py-2'>{checkin.distance} KM</td>
                     </tr>
                 )
@@ -85,7 +92,7 @@ export async function getServerSideProps({ req, res })  {
             .collection('checks')
             .near({
                 center: todaysData.coordinates,
-                radius: 1000
+                radius: 50000
             })
             .get()
             let checkinsList = []
