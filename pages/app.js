@@ -46,7 +46,7 @@ const App = (props) => {
                 {
                     dist = 'Perto'
                 }
-
+               // coordenadas = checkin.coords
                 return (
                     <tr>
                         <td className='border px-4 py-2'>{id}</td>

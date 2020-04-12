@@ -1,5 +1,7 @@
-import React, { Children } from 'react';
+import React, { children } from 'react';
 import Link from 'next/link';
+import { useLocation } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const NavLink = ({href, children}) =>{
     return(
@@ -9,6 +11,7 @@ const NavLink = ({href, children}) =>{
     )
 }
 const NavBar = () =>{
+    
     return (
         <div className='bg-gray-500 py-4 text-center'>
 
