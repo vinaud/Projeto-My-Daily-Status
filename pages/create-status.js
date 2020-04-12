@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import auth0 from '../lib/auth0';
 import axios from 'axios';
-import {browserHistory} from 'react-router';
-import {withRouter} from 'react-router-dom'
 import { useHistory } from "react-router-dom";
 
 const CreateStatus = (props) => 
@@ -15,6 +13,10 @@ const CreateStatus = (props) =>
             long: null
         }
     })
+    const routeChange=()=> {
+        window.location = "/app";
+      }
+
     const getMyLocation = () => {
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition( position  => {
@@ -44,6 +46,8 @@ const CreateStatus = (props) =>
    
     const save = async() => {
         await axios.post('/api/save-status', dados)
+
+        .then(routeChange)
 
         
     }
