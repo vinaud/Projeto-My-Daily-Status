@@ -13,7 +13,7 @@ const CreateStatus = (props) =>
             long: null
         }
     })
-    const routeChange=()=> {
+     function routeChange(){
         window.location = "/app";
       }
 
@@ -47,7 +47,10 @@ const CreateStatus = (props) =>
     const save = async() => {
         await axios.post('/api/save-status', dados)
 
-        .then(routeChange)
+        .then(()=>{
+            alert("Status cadastrado com sucesso");
+            routeChange();
+        })
 
         
     }
