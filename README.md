@@ -7,10 +7,10 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-## Descrição
+# Descrição
 Projeto desenvolvido durante o workshop DevPleno 2020.
 
-## Tecnologias Usadas
+# Tecnologias Usadas
 - NodeJS Versão 12.16.1 
 - ReactJs Versão 16.12.0
 - NextJS
@@ -18,18 +18,18 @@ Projeto desenvolvido durante o workshop DevPleno 2020.
 - Banco de dados NoSQL via Firebase
 - Windtail
 
-## Instruções
-# Instalação
+# Instruções
+## Instalação
 
--Cadastrar no Auth0 e Firebase e atualizar os arquivos .env, firesbase-secret.json e now.json com as permissões
+- Cadastrar no Auth0 e Firebase e atualizar os arquivos .env, firebase-secret.json e now.json com as permissões
 
-Para baixar dependencias:
+- Para baixar dependencias:
 ```bash
 
-$ npm isntall
+$ npm install
 ```
 
-# Execução do projeto
+## Execução do projeto
 ```bash
 
 $ npm run dev
@@ -37,4 +37,4 @@ $ npm run dev
 ```
 
 
-## Telas do projeto
+# Telas do projeto
