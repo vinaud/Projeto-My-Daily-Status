@@ -9,10 +9,8 @@
 
 ## Descrição
 Projeto desenvolvido durante o workshop DevPleno 2020.
-
-    O My Daily Status é um sistema web que permite, que durante uma epidemia, os usuários façam
-um cadastro diário do seu status de saúde, se está bem, se apresenta sintomas ou se tem uma doença contagiosa confirmada, como a COVID-19, que se espalhou em 2020. 
-    Os status são compartilhados de forma anônima e o usuário consegue ver uma listagem dos status das pessoas em um raio de até 50km da sua posição
+O My Daily Status é um sistema web que permite, que durante uma epidemia, os usuários façam
+um cadastro diário do seu status de saúde, se está bem, se apresenta sintomas ou se tem uma doença contagiosa confirmada, como a COVID-19, que se espalhou em 2020. Os status são compartilhados de forma anônima e o usuário consegue ver uma listagem dos status das pessoas em um raio de até 50km da sua posição
 
 ## Tecnologias Usadas
 - NodeJS Versão 12.16.1 
