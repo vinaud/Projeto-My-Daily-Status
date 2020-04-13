@@ -8,7 +8,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 ## Descrição
-
+Projeto desenvolvido durante o workshop DevPleno 2020.
 
 ## Tecnologias Usadas
 - NodeJS Versão 12.16.1 
@@ -17,5 +17,24 @@
 - Autenticação via Auth0
 - Banco de dados NoSQL via Firebase
 - Windtail
+
+## Instruções
+# Instalação
+
+-Cadastrar no Auth0 e Firebase e atualizar os arquivos .env, firesbase-secret.json e now.json com as permissões
+
+Para baixar dependencias:
+```bash
+
+$ npm isntall
+```
+
+# Execução do projeto
+```bash
+
+$ npm run dev
+
+```
+
 
 ## Telas do projeto
