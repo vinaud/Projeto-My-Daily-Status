@@ -3,6 +3,7 @@ import auth0 from '../lib/auth0';
 import router from 'next/router';
 import { db } from '../lib/db';
 import { distance } from '../lib/geo';
+import Map from '../components/Map';
 
 
 const App = (props) => {
